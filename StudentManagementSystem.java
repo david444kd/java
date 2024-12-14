@@ -10,12 +10,12 @@ import javafx.stage.Stage;
 
 public class StudentManagementSystem extends Application {
 
-    // Компоненты GUI
+
     private TableView<Student> studentTable = new TableView<>();
     private TableView<Subject> subjectTable = new TableView<>();
     private TableView<AttendanceRecord> attendanceTable = new TableView<>();
 
-    // Списки данных
+
     private ObservableList<Student> students = FXCollections.observableArrayList();
     private ObservableList<Subject> subjects = FXCollections.observableArrayList();
     private ObservableList<AttendanceRecord> attendanceRecords = FXCollections.observableArrayList();
@@ -68,7 +68,7 @@ public class StudentManagementSystem extends Application {
         primaryStage.show();
     }
 
-    // Классы данных
+
     public static class Student {
         private final int id;
         private final String name;
@@ -231,7 +231,7 @@ public class StudentManagementSystem extends Application {
         Dialog<Student> dialog = new Dialog<>();
         dialog.setTitle("Добавить студента");
 
-        // Создание полей ввода
+
         GridPane grid = new GridPane();
         grid.setHgap(10);
         grid.setVgap(10);
@@ -268,7 +268,7 @@ public class StudentManagementSystem extends Application {
         Dialog<Subject> dialog = new Dialog<>();
         dialog.setTitle("Добавить предмет");
 
-        // Создание полей ввода
+
         GridPane grid = new GridPane();
         grid.setHgap(10);
         grid.setVgap(10);
